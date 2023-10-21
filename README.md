@@ -12,7 +12,7 @@ Welcome to the SQL Library! Our library allows you to borrow books, audiobooks, 
 
 Below is the conceptual model of the database structure that was implemented in this project:
 
-![Model koncepcyjny](model_koncepcyjny.png)
+<img src="https://github.com/dominikahojniak/Library-SQL/assets/122748213/568c8012-fdfa-46e7-8fd1-1567a1d06050" width=”50%” height=”50%”></img>
 
 ## Getting Started
 
