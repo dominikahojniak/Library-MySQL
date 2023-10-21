@@ -1,19 +1,18 @@
 # Library-SQL
 
-Welcome to the SQL Library! This library provides a collection of SQL scripts and utilities to simplify database interactions.
+Welcome to the SQL Library! Our library allows you to borrow books, audiobooks, magazines and comics, as well as reserve available materials. It works by registering users who can borrow library resources and receive notifications about due dates and fees.
 
 ## Table of Contents
-- [Features](#features)
+- [Database conceptual model](#database-conceptual-model)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
-## Features
+## Database conceptual model
 
-- **SQL Query Builder**: Easily create SQL queries with a fluent, programmatic interface.
-- **Database Connection**: Establish and manage connections to your SQL databases.
-- **Query Execution**: Execute SQL queries with parameterized input and retrieve results.
+Below is the conceptual model of the database structure that was implemented in this project:
+
+![Model koncepcyjny](model_koncepcyjny.png)
 
 ## Getting Started
 
@@ -46,3 +45,9 @@ for row in result:
 
 # Close the database connection when done
 connection.close()
+
+
+## Author
+
+This project was created by a group of 4 people as a form of final project for the course Databases.
+
