@@ -4,6 +4,7 @@ Welcome to the SQL Library! Our library allows you to borrow books, audiobooks, 
 
 ## Table of Contents
 - [Database conceptual model](#database-conceptual-model)
+- [Functionalities](#functionalities)
 - [Usage](#usage)
 
 ## Database conceptual model
@@ -16,6 +17,24 @@ There are eight main tables in the database:
 - `uzytkownicy`: Stores user information.
 - `wypozyczenia_uzytkownicy`: Zawiera informacje o zamówieniach, takie jak identyfikator zamówienia, data i koszt.
 - `Products`: Tabela produktów z danymi o produktach, takie jak identyfikator, nazwa i cena.
+
+## Functionalities
+
+This project offers various functionalities and database aspects:
+- Triggers
+- Events
+- Transactions
+- Partitioning
+- Versioning
+- Limitations(Check and Unique)
+
+- **Functions and Procedure such as**:
+
+- Borrowing/donating library resources
+- Item reservation
+- Download user rentals
+- Paying the fine
+- Finding a publication by a given author
 
 ## Usage
 
@@ -45,6 +64,9 @@ LEFT JOIN
 LEFT JOIN
   `komiksy` ko ON r.`ID_komiksy` = ko.`ID_komiksy`;
 ```
+Result:
+
+<img src="https://github.com/dominikahojniak/Library-SQL/assets/122748213/7a90234e-0b56-467e-9308-2934e1a5f29c" width=”50%” height=”50%”></img>
 
 ## Author
 
