@@ -28,7 +28,7 @@ This project offers various functionalities and database aspects:
 - Versioning
 - Limitations(Check and Unique)
 
-- **Functions and Procedure such as**:
+ **Functions and Procedure such as**:
 
 - Borrowing/donating library resources
 - Item reservation
