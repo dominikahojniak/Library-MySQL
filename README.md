@@ -15,8 +15,11 @@ Below is the conceptual model of the database structure that was implemented in 
 
 There are eight main tables in the database:
 - `uzytkownicy`: Stores user information.
-- `wypozyczenia_uzytkownicy`: Zawiera informacje o zamówieniach, takie jak identyfikator zamówienia, data i koszt.
-- `Products`: Tabela produktów z danymi o produktach, takie jak identyfikator, nazwa i cena.
+- `wypozyczenia_uzytkownicy`: Contains information about rentals.
+- `ksiazki` , `audiobooki` , `komiksy` , `czasopisma` : Product tables with relevant data.
+- `oplaty` : Stores information about assessed fees.
+- `rezerwacje` : Stores information about reservations.
+
 
 ## Functionalities
 
@@ -30,7 +33,7 @@ This project offers various functionalities and database aspects:
 
  **Functions and Procedure such as**:
 
-- Borrowing/donating library resources
+- Borrowing/returning library resources
 - Item reservation
 - Download user rentals
 - Paying the fine
@@ -71,4 +74,5 @@ Result:
 ## Author
 
 This project was created by a group of 4 people as a form of final project for the course Databases.
+Dominika Hojniak was in charge of views and versioning, as well as co-creating triggers and events.
 
