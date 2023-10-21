@@ -1,6 +1,6 @@
-# Library-SQL
+# Library-MySQL
 
-Welcome to the SQL Library! Our library allows you to borrow books, audiobooks, magazines and comics, as well as reserve available materials. It works by registering users who can borrow library resources and receive notifications about due dates and fees.
+Welcome to the MySQL Library! Our library allows you to borrow books, audiobooks, magazines and comics, as well as reserve available materials. It works by registering users who can borrow library resources and receive notifications about due dates and fees.
 
 ## Table of Contents
 - [Database conceptual model](#database-conceptual-model)
