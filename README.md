@@ -2,6 +2,8 @@
 
 Welcome to the MySQL Library! Our library allows you to borrow books, audiobooks, magazines and comics, as well as reserve available materials. It works by registering users who can borrow library resources and receive notifications about due dates and fees.
 
+This project uses the MariaDB database management system to store data.
+
 ## Table of Contents
 - [Database conceptual model](#database-conceptual-model)
 - [Functionalities](#functionalities)
