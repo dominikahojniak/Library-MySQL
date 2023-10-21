@@ -21,11 +21,30 @@ There are eight main tables in the database:
 
 Example SQL queries that can be executed using this library:
 
-# Execute a SELECT query
-query = 'SELECT * FROM users WHERE username = ?'
-username = 'example_user'
-result = connection.execute(query, (username,))
+- Displaying how many copies of a given item are on loan
+- Showing what role a given user plays
+- Displaying which titles a given user has rented
+- View reserved titles by a given user:
 
+```
+CREATE OR REPLACE VIEW `view_uzytkownicy_rezerwacje` AS
+SELECT
+  u.`imie`,
+  u.`nazwisko`,
+  COALESCE(k.`tytul`, a.`tytul`, c.`tytul`, ko.`tytul`) AS `zarezerwowany_tytul`
+FROM
+  `uzytkownicy` u
+LEFT JOIN
+  `rezerwacje` r ON u.`ID_uzytkownicy` = r.`ID_uzytkownicy`
+LEFT JOIN
+  `ksiazki` k ON r.`ID_ksiazki` = k.`ID_ksiazki`
+LEFT JOIN
+  `audiobooki` a ON r.`ID_audiobooka` = a.`ID_audiobooka`
+LEFT JOIN
+  `czasopisma` c ON r.`ID_czasopisma` = c.`ID_czasopisma`
+LEFT JOIN
+  `komiksy` ko ON r.`ID_komiksy` = ko.`ID_komiksy`;
+```
 
 ## Author
 
